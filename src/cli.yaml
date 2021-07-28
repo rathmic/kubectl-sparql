@@ -1,0 +1,9 @@
+name: kubectl-sparql 
+version: "0.1.0"
+author: "Michael Rath <michael.rath@ima.rwth-aachen.de> \nMoritz Kroeger <moritz.kroeger@llt.rwth-aachen.de>"
+about: Does awesome things
+args:
+    - label:
+        about: Selects all pods with a given label
+        required: true
+        index: 1
