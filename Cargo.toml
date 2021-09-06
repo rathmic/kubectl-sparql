@@ -6,10 +6,15 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "ontologyreader"
+path = "src/ontologyreader/ontologyreader.rs"
+
 [dependencies]
 futures = "0.3.16"
 tokio = { version = "1.9.0", features = ["full"] }
 oxigraph = "0.2.5"
+oxiri = "0.1.1"
 clap = { version = "3.0.0-beta.2", features = ["yaml"] }
 kube = "0.58.1"
 kube-runtime = "0.58.1"

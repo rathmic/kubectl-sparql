@@ -2,6 +2,7 @@ use clap::{App, load_yaml};
 use kube::{api::{Api, ListParams, ResourceExt}, Client};
 use k8s_openapi::api::core::v1::Pod;
 use futures::executor::block_on;
+use ontologyreader::ontologyreader;
 
 fn main() {
 
